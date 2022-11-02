@@ -50,7 +50,7 @@
         <div class="portfolio-item-individual">
             <p>In this project, multiple robots were used to efficiently explore and 
                 map an unknown space. Two TurtleBot3's were used in simulation and 
-                physically to run SLAM, map merge, and then path planning algorithms to 
+                physically to run Simultaneous Localization and Mapping (SLAM), map merging, and then path planning algorithms to 
                 work together to explore an unknown space more efficiently than a single robot.
             </p>
             <center><img src="SlamProject-robots.jpg" alt="Picture of the two used robots"></center>
@@ -60,10 +60,22 @@
                 SLAM and navigation.
             </p>
             <p>My job on this project was to work get all SLAM, map merging, and navigation working on the
-                virtual robots in ROS. This required knowledge of ROS, as well as how to integrate different packages
-                and code together. 
+                virtual robots in ROS. In order to complete this project on time, our team utilized built in 
+                packages for the SLAM algorithms and map merging. This allowed our team to focus on getting the 
+                turtlebot3's running properly. However, throughout the semester we learned how to properly run
+                SLAM and how to merge pointclouds for map merging, through various exercises in MATLAB. 
             </p>
-
+            <center><img src="MergedMaps.jpg" alt="Picture of the merged map gained from both robots"></center>
+            <p>
+                Above you can see two examples of our real world merged maps. For each map, we started our Turtlebot3's in different 
+                locations in the room, and then let the LIDAR scanner run while we drove the two robots to map out the rest 
+                of the room. On the map, the grey area represents open air in the world, the black lines are obstacles, and 
+                the unmarked areas are areas not reached by the robot/LIDAR. As you can see, the map merging was very 
+                succesful. The walls are mostly properly merged, with very little noise.
+            </p>
+            <p>
+                Below is our full write-up for the project, I would encourage reading to get a full understanding!
+            </p>
             <a href="RSSFinalPaper.pdf">
                 <p>Here is the PDF to our full write-up</p>
             </a>
