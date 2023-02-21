@@ -281,14 +281,20 @@ header {
 }
 
 .portfolio__item {
-    background: var(--clr-accent);
+    background: var(--clr-dark);
+    padding: .25em .25em;
+    font-size: 1rem;
+    color: var(--clr-light);
+    font: var(--ff-secondary); 
+    font-weight: 600;
     overflow: hidden;
     margin: auto;
+    text-decoration: none
 }
 
 .portfolio__img {
     transition: 
-        transform 400ms cubic-bezier(.5,0,.5,1),
+        transform 250ms cubic-bezier(.5,0,.5,1),
         opacity 250ms linear;
 }
 
@@ -299,7 +305,7 @@ header {
 
 .portfolio__img:hover,
 .portfolio__item:focus .portfolio__img {
-    transform: scale(1.2,1.2);
+    transform: scale(1.01,1.01);
     opacity: .85;
 }
 
